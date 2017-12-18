@@ -1,17 +1,24 @@
+# From Ubuntu LTS
 FROM ubuntu:16.04
-
-MAINTAINER Billy Ray Teves <billyteves@gmail.com>
+LABEL MAINTAINER="Red Panda CI <redpandaci@gmail.com>"
 
 # Let's start with some basic stuff.
-RUN apt-get update -qq && apt-get install -qqy \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    lxc \
-    iptables
+ENV DOCKER_VERSION=docker-ce=17.09.1~ce-0~ubuntu \
+    DOCKER_COMPOSE_VERSION=1.17.1
     
-# Install Docker from Docker Inc. repositories.
-RUN curl -sSL https://get.docker.com/ | sh
+RUN apt-get update -y && \
+    apt-get install -y apt-transport-https ca-certificates curl software-properties-common lxc iptables && \
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
+    apt-get update -y && \
+    apt-get install -y ${DOCKER_VERSION} && \
+    apt-get clean && \
+    apt-get autoclean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Install redent docker Compose
+RUN curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
+    chmod +x /usr/local/bin/docker-compose
 
 # Install the magic wrapper.
 ADD ./wrapdocker /usr/local/bin/wrapdocker
@@ -19,4 +26,4 @@ RUN chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
-CMD ["wrapdocker"]
+ENTRYPOINT ["wrapdocker"]
