@@ -8,6 +8,7 @@
     "commitmsg": "validate-commit-msg -p eslint",
     "lint": "dockerlint Dockerfile",
     "pretest": "npm run lint",
+    "precommit": "npm run lint",
     "test": "bin/test.sh"
   },
   "repository": {
