@@ -1,0 +1,8 @@
+
+version: '2'
+services:
+
+  ubuntu-dind:
+    image: redpandaci/ubuntu-dind:latest
+    privileged: true
+    tty: true
