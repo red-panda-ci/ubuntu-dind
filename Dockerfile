@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 LABEL MAINTAINER="Red Panda CI <redpandaci@gmail.com>"
 
 # Let's start with some basic stuff.
-ENV DOCKER_VERSION=docker-ce=17.09.1~ce-0~ubuntu \
-    DOCKER_COMPOSE_VERSION=1.17.1
+ENV DOCKER_VERSION=docker-ce=17.09.1~ce-0~ubuntu
+ENV DOCKER_COMPOSE_VERSION=1.17.1
     
 RUN apt-get update -y && \
     apt-get install -y apt-transport-https ca-certificates curl software-properties-common lxc iptables && \
@@ -30,10 +30,10 @@ RUN wget https://github.com/rancher/rancher-compose/releases/download/v$RANCHER_
 
 # nvm and nodejs
 ENV NODE_VERSION 8.9.4
-ENV NVM_VERSION 0.33.8 
+ENV NVM_VERSION 0.33.8
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash
 ENV NVM_DIR=/root/.nvm
-RUN . $HOME/.nvm/nvm.sh && \
+RUN . /root/.nvm/nvm.sh && \
     nvm install $NODE_VERSION && \
     nvm alias default $NODE_VERSION && \
     nvm use default
