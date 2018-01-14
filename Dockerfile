@@ -1,4 +1,3 @@
-# From Ubuntu LTS
 FROM ubuntu:16.04
 LABEL MAINTAINER="Red Panda CI <redpandaci@gmail.com>"
 
@@ -40,7 +39,7 @@ RUN . $HOME/.nvm/nvm.sh && \
     nvm use default
 
 # Install the magic wrapper.
-ADD ./wrapdocker /usr/local/bin/wrapdocker
+COPY ./wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
