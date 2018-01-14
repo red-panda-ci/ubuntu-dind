@@ -2,4 +2,4 @@
 
 TAG=$1
 
-docker push redpandaci/ubuntu-dind:$TAG .
+docker push redpandaci/ubuntu-dind:$TAG
