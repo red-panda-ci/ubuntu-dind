@@ -1,9 +1,9 @@
 #!groovy
 
-@Library('github.com/red-panda-ci/jenkins-pipeline-library@v2.3.3') _
+@Library('github.com/red-panda-ci/jenkins-pipeline-library@v2.6.0') _
 
 // Initialize global config
-cfg = jplConfig('ubuntu-dind', 'docker', '', [hipchat: '', slack: '', email:'redpandaci+ubuntudind@gmail.com'])
+cfg = jplConfig('ubuntu-dind', 'docker', '', [slack: '#integrations', email:'redpandaci+ubuntudind@gmail.com'])
 
 pipeline {
     agent none
@@ -43,13 +43,6 @@ pipeline {
                 jplDockerPush (cfg, "redpandaci/ubuntu-dind", "16.04", "", "https://registry.hub.docker.com", "redpandaci-docker-credentials")
                 jplDockerPush (cfg, "redpandaci/ubuntu-dind", "latest", "", "https://registry.hub.docker.com", "redpandaci-docker-credentials")
                 jplCloseRelease(cfg)
-            }
-        }
-        stage ('PR Clean') {
-            agent { label 'docker' }
-            when { branch 'PR-*' }
-            steps {
-                deleteDir()
             }
         }
     }
