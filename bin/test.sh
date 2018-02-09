@@ -61,7 +61,7 @@ destroy_container(){
 docker_version_test(){
     local container expected_version
     container=$1
-    expected_version="17.09.1-ce"
+    expected_version="17.12.0-ce"
     version=$(docker exec $container docker -v | cut -d "," -f 1 | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then
@@ -74,7 +74,7 @@ docker_version_test(){
 docker_compose_version_test(){
     local container expected_version
     container=$1
-    expected_version="1.17.1"
+    expected_version="1.18.0"
     version=$(docker exec $container docker-compose -v | cut -d "," -f 1 | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then
