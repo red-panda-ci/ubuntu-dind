@@ -1,5 +1,23 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2018-02-09)
+
+
+### Build
+
+* Update to jpl v2.6.0 ([842e2d5938de082f64386835828d3371a6309ce7](https://github.com/red-panda-ci/ubuntu-dind/commit/842e2d5938de082f64386835828d3371a6309ce7))
+
+### Docs
+
+* Adds CODE_OF_CONDUCT.md ([d3e003cdf1e72920284cb53298310e695b17aebb](https://github.com/red-panda-ci/ubuntu-dind/commit/d3e003cdf1e72920284cb53298310e695b17aebb))
+
+### Update
+
+* Update docker to 17.12.0-ce ([212904c81d8bd1c733ceb98bf7b531351e6fa71d](https://github.com/red-panda-ci/ubuntu-dind/commit/212904c81d8bd1c733ceb98bf7b531351e6fa71d))
+
+
+
 <a name="1.0.0"></a>
-# [1.0.0](https://github.com/red-panda-ci/ubuntu-dind/compare/v0.1.0...v1.0.0) (2018-01-14)
+# 1.0.0 (2018-01-14)
 
 
 ### Build
@@ -14,11 +32,12 @@
 ### New
 
 * Adds renacher-compose, nvm, node ([fcf74fee09716c29b7842dfe9c023b487db6ab14](https://github.com/red-panda-ci/ubuntu-dind/commit/fcf74fee09716c29b7842dfe9c023b487db6ab14))
+* Release to 1.0.0 ([480737e81beef65622afa0e8b0e6bfb8d6824608](https://github.com/red-panda-ci/ubuntu-dind/commit/480737e81beef65622afa0e8b0e6bfb8d6824608))
 
 
 
 <a name="0.1.0"></a>
-# [0.1.0](https://github.com/red-panda-ci/ubuntu-dind/compare/22534fa069f956ecbc330c8cf0e7956f3ca40d71...v0.1.0) (2017-12-18)
+# 0.1.0 (2017-12-18)
 
 
 ### Build
