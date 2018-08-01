@@ -4,7 +4,7 @@ Ubuntu image with docker in docker strategy (is very important run with --privil
 This docker is based on jpetazzo's and billyteves' dind. Credits to them.
 
 _Supported tags and respective `Dockerfile` links:_
-[`1.0.0`, `latest`, `test`](Dockerfile)
+[`1.0.2`, `latest`, `test`](Dockerfile)
 
 ## Usage
 
@@ -18,8 +18,8 @@ docker run --privileged -it -v redpandaci-ubuntu-dind:/var/lib/docker redpandaci
 
 ## Utilities
 
-* docker 17.12.0
-* docker-compose 1.18.0
+* docker 18.03.1-ce
+* docker-compose 1.22.0
 * rancher-compose 0.12.5
 * nvm 0.33.8
 * node 8.9.4
