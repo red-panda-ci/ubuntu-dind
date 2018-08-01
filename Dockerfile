@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 LABEL MAINTAINER="Red Panda CI <redpandaci@gmail.com>"
 
 # Let's start with some basic stuff.
-ENV DOCKER_VERSION=docker-ce=17.12.0~ce-0~ubuntu
-ENV DOCKER_COMPOSE_VERSION=1.18.0
+ENV DOCKER_VERSION=docker-ce=18.03.1~ce-0~ubuntu
+ENV DOCKER_COMPOSE_VERSION=1.22.0
     
 RUN apt-get update -y && \
     apt-get install -y apt-transport-https ca-certificates curl software-properties-common lxc iptables && \

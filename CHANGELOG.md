@@ -1,9 +1,24 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2018-08-01)
+
+
+### Build
+
+* Update to jpl v2.6.2 ([89128df085366aa04998b34b289647cb36aec253](https://github.com/red-panda-ci/ubuntu-dind/commit/89128df085366aa04998b34b289647cb36aec253))
+
+### Upgrade
+
+* Refresh versions to latest ones ([3c87c8d5365758884d017bd350d207871125aec7](https://github.com/red-panda-ci/ubuntu-dind/commit/3c87c8d5365758884d017bd350d207871125aec7))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2018-02-09)
 
 
 ### Build
 
+* Update CHANGELOG.md to v1.0.1 with Red Panda JPL ([921b0c4f967f374bc31ac23af8206d60e0c4f49b](https://github.com/red-panda-ci/ubuntu-dind/commit/921b0c4f967f374bc31ac23af8206d60e0c4f49b))
 * Update to jpl v2.6.0 ([842e2d5938de082f64386835828d3371a6309ce7](https://github.com/red-panda-ci/ubuntu-dind/commit/842e2d5938de082f64386835828d3371a6309ce7))
 
 ### Docs
