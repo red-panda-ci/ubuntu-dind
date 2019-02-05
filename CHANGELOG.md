@@ -1,9 +1,24 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2019-02-05)
+
+
+### Build
+
+* Fix docker version test ([a8e44fa9ecd9fdccad95434b2ba8a0b69415093b](https://github.com/red-panda-ci/ubuntu-dind/commit/a8e44fa9ecd9fdccad95434b2ba8a0b69415093b))
+
+### Upgrade
+
+* Refresh versions to latest ones ([8d7fd3ef0da10206230a1105b2499d266f55e9f9](https://github.com/red-panda-ci/ubuntu-dind/commit/8d7fd3ef0da10206230a1105b2499d266f55e9f9))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2018-08-01)
 
 
 ### Build
 
+* Update CHANGELOG.md to v1.0.2 with Red Panda JPL ([6793fe8f3d788413bc417c722fa90c2007e28518](https://github.com/red-panda-ci/ubuntu-dind/commit/6793fe8f3d788413bc417c722fa90c2007e28518))
 * Update to jpl v2.6.2 ([89128df085366aa04998b34b289647cb36aec253](https://github.com/red-panda-ci/ubuntu-dind/commit/89128df085366aa04998b34b289647cb36aec253))
 
 ### Upgrade
