@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 LABEL MAINTAINER="Red Panda CI <redpandaci@gmail.com>"
 
 # Let's start with some basic stuff.
-ENV DOCKER_VERSION=docker-ce=18.03.1~ce-0~ubuntu
-ENV DOCKER_COMPOSE_VERSION=1.22.0
+ENV DOCKER_VERSION=docker-ce=5:18.09.1~3-0~ubuntu-xenial
+ENV DOCKER_COMPOSE_VERSION=1.23.0
     
 RUN apt-get update -y && \
     apt-get install -y apt-transport-https ca-certificates curl software-properties-common lxc iptables && \
@@ -29,8 +29,8 @@ RUN wget https://github.com/rancher/rancher-compose/releases/download/v$RANCHER_
     rm -r rancher-compose-v$RANCHER_COMPOSE_VERSION
 
 # nvm and nodejs
-ENV NODE_VERSION 8.9.4
-ENV NVM_VERSION 0.33.8
+ENV NODE_VERSION 10.15.1
+ENV NVM_VERSION 0.34.0
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash
 ENV NVM_DIR=/root/.nvm
 RUN . /root/.nvm/nvm.sh && \
@@ -45,3 +45,5 @@ RUN chmod +x /usr/local/bin/wrapdocker
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
 ENTRYPOINT ["wrapdocker"]
+
+# Update to latest versions on 2019-02-05
