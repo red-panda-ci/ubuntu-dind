@@ -2,4 +2,4 @@
 
 TAG=$1
 
-docker build -t redpandaci/ubuntu-dind:$TAG .
+docker build --pull -t redpandaci/ubuntu-dind:$TAG .

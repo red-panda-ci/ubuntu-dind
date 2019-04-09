@@ -61,7 +61,7 @@ destroy_container(){
 docker_version_test(){
     local container expected_version
     container=$1
-    expected_version="18.09.1"
+    expected_version="18.09.4"
     version=$(docker exec $container docker -v | cut -d "," -f 1 | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then
@@ -74,7 +74,7 @@ docker_version_test(){
 docker_compose_version_test(){
     local container expected_version
     container=$1
-    expected_version="1.23.0"
+    expected_version="1.24.0"
     version=$(docker exec $container docker-compose -v | cut -d "," -f 1 | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then
@@ -100,7 +100,7 @@ rancher_compose_version_test(){
 node_version_test(){
     local container expected_version
     container=$1
-    expected_version="v10.15.1"
+    expected_version="v10.15.3"
     version=$(docker exec $container /root/.nvm/versions/node/${expected_version}/bin/node -v)
 
     if [[ "$expected_version" = "$version" ]]; then
