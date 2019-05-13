@@ -1,9 +1,20 @@
+<a name="1.3.0"></a>
+# 1.3.0 (2019-05-13)
+
+
+### Upgrade
+
+* Refresh versions to latest ones ([6587d2281e0a4491745a466fba547b9b60f51281](https://github.com/red-panda-ci/ubuntu-dind/commit/6587d2281e0a4491745a466fba547b9b60f51281))
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2019-04-09)
 
 
 ### Build
 
+* Update CHANGELOG.md to v1.2.0 with Red Panda JPL ([7e874c641939c7320b868a02c8fb8f3a6636b14d](https://github.com/red-panda-ci/ubuntu-dind/commit/7e874c641939c7320b868a02c8fb8f3a6636b14d))
 * Upgrade jpl version to v2.7.0 ([30770ef95f85ffc632453b35a65693e935c059e9](https://github.com/red-panda-ci/ubuntu-dind/commit/30770ef95f85ffc632453b35a65693e935c059e9))
 
 ### Upgrade
