@@ -61,7 +61,7 @@ destroy_container(){
 docker_version_test(){
     local container expected_version
     container=$1
-    expected_version="18.09.4"
+    expected_version="18.09.6"
     version=$(docker exec $container docker -v | cut -d "," -f 1 | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then

@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 LABEL MAINTAINER="Red Panda CI <redpandaci@gmail.com>"
 
 # Let's start with some basic stuff.
-ENV DOCKER_VERSION=docker-ce=5:18.09.4~3-0~ubuntu-xenial
+ENV DOCKER_VERSION=docker-ce=5:18.09.6~3-0~ubuntu-xenial
 ENV DOCKER_COMPOSE_VERSION=1.24.0
     
 RUN apt-get update -y && \
