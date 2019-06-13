@@ -1,108 +1,94 @@
-<a name="1.3.0"></a>
-# 1.3.0 (2019-05-13)
+# Changelog
 
-
-### Upgrade
-
-* Refresh versions to latest ones ([6587d2281e0a4491745a466fba547b9b60f51281](https://github.com/red-panda-ci/ubuntu-dind/commit/6587d2281e0a4491745a466fba547b9b60f51281))
-
-
-
-<a name="1.2.0"></a>
-# 1.2.0 (2019-04-09)
-
+## v1.3.1 (2019-06-13)
 
 ### Build
 
-* Update CHANGELOG.md to v1.2.0 with Red Panda JPL ([7e874c641939c7320b868a02c8fb8f3a6636b14d](https://github.com/red-panda-ci/ubuntu-dind/commit/7e874c641939c7320b868a02c8fb8f3a6636b14d))
-* Upgrade jpl version to v2.7.0 ([30770ef95f85ffc632453b35a65693e935c059e9](https://github.com/red-panda-ci/ubuntu-dind/commit/30770ef95f85ffc632453b35a65693e935c059e9))
+* Update Auto Release Log adding v1.3.1 info with JPL ([d7131f9](https://github.com:red-panda-ci/ubuntu-dind/commit/d7131f9))
+* Don't skip default SCM checkout ([b05a738](https://github.com:red-panda-ci/ubuntu-dind/commit/b05a738))
+* Add auto-release stage ([dd02151](https://github.com:red-panda-ci/ubuntu-dind/commit/dd02151))
+
+## v1.3.0 (2019-05-13)
 
 ### Upgrade
 
-* Refesh versions to latest ones on 2019-04-09 ([5294447c9729e376739628344722056da1003b68](https://github.com/red-panda-ci/ubuntu-dind/commit/5294447c9729e376739628344722056da1003b68))
-
-
-
-<a name="1.1.0"></a>
-# 1.1.0 (2019-02-05)
-
+* Refresh versions to latest ones ([6587d22](https://github.com:red-panda-ci/ubuntu-dind/commit/6587d22))
 
 ### Build
 
-* Fix docker version test ([a8e44fa9ecd9fdccad95434b2ba8a0b69415093b](https://github.com/red-panda-ci/ubuntu-dind/commit/a8e44fa9ecd9fdccad95434b2ba8a0b69415093b))
-* Update CHANGELOG.md to v1.1.0 with Red Panda JPL ([95922d035764f0b13ab669d517c1c0f4b6adf0bf](https://github.com/red-panda-ci/ubuntu-dind/commit/95922d035764f0b13ab669d517c1c0f4b6adf0bf))
+* Update CHANGELOG.md to v1.3.0 with Red Panda JPL ([d1f55bb](https://github.com:red-panda-ci/ubuntu-dind/commit/d1f55bb))
+
+## v1.2.0 (2019-04-09)
 
 ### Upgrade
 
-* Refresh versions to latest ones ([8d7fd3ef0da10206230a1105b2499d266f55e9f9](https://github.com/red-panda-ci/ubuntu-dind/commit/8d7fd3ef0da10206230a1105b2499d266f55e9f9))
-
-
-
-<a name="1.0.2"></a>
-## 1.0.2 (2018-08-01)
-
+* Refesh versions to latest ones on 2019-04-09 ([5294447](https://github.com:red-panda-ci/ubuntu-dind/commit/5294447))
 
 ### Build
 
-* Update CHANGELOG.md to v1.0.2 with Red Panda JPL ([6793fe8f3d788413bc417c722fa90c2007e28518](https://github.com/red-panda-ci/ubuntu-dind/commit/6793fe8f3d788413bc417c722fa90c2007e28518))
-* Update to jpl v2.6.2 ([89128df085366aa04998b34b289647cb36aec253](https://github.com/red-panda-ci/ubuntu-dind/commit/89128df085366aa04998b34b289647cb36aec253))
+* Update CHANGELOG.md to v1.2.0 with Red Panda JPL ([7e874c6](https://github.com:red-panda-ci/ubuntu-dind/commit/7e874c6))
+* Upgrade jpl version to v2.7.0 ([30770ef](https://github.com:red-panda-ci/ubuntu-dind/commit/30770ef))
+
+## v1.1.0 (2019-02-05)
 
 ### Upgrade
 
-* Refresh versions to latest ones ([3c87c8d5365758884d017bd350d207871125aec7](https://github.com/red-panda-ci/ubuntu-dind/commit/3c87c8d5365758884d017bd350d207871125aec7))
-
-
-
-<a name="1.0.1"></a>
-## 1.0.1 (2018-02-09)
-
+* Refresh versions to latest ones ([8d7fd3e](https://github.com:red-panda-ci/ubuntu-dind/commit/8d7fd3e))
 
 ### Build
 
-* Update CHANGELOG.md to v1.0.1 with Red Panda JPL ([921b0c4f967f374bc31ac23af8206d60e0c4f49b](https://github.com/red-panda-ci/ubuntu-dind/commit/921b0c4f967f374bc31ac23af8206d60e0c4f49b))
-* Update to jpl v2.6.0 ([842e2d5938de082f64386835828d3371a6309ce7](https://github.com/red-panda-ci/ubuntu-dind/commit/842e2d5938de082f64386835828d3371a6309ce7))
+* Update CHANGELOG.md to v1.1.0 with Red Panda JPL ([95922d0](https://github.com:red-panda-ci/ubuntu-dind/commit/95922d0))
+* Fix docker version test ([a8e44fa](https://github.com:red-panda-ci/ubuntu-dind/commit/a8e44fa))
 
-### Docs
+## v1.0.2 (2018-08-01)
 
-* Adds CODE_OF_CONDUCT.md ([d3e003cdf1e72920284cb53298310e695b17aebb](https://github.com/red-panda-ci/ubuntu-dind/commit/d3e003cdf1e72920284cb53298310e695b17aebb))
+### Upgrade
+
+* Refresh versions to latest ones ([3c87c8d](https://github.com:red-panda-ci/ubuntu-dind/commit/3c87c8d))
+
+### Build
+
+* Update CHANGELOG.md to v1.0.2 with Red Panda JPL ([6793fe8](https://github.com:red-panda-ci/ubuntu-dind/commit/6793fe8))
+* Update to jpl v2.6.2 ([89128df](https://github.com:red-panda-ci/ubuntu-dind/commit/89128df))
+
+## v1.0.1 (2018-02-09)
 
 ### Update
 
-* Update docker to 17.12.0-ce ([212904c81d8bd1c733ceb98bf7b531351e6fa71d](https://github.com/red-panda-ci/ubuntu-dind/commit/212904c81d8bd1c733ceb98bf7b531351e6fa71d))
-
-
-
-<a name="1.0.0"></a>
-# 1.0.0 (2018-01-14)
-
+* Update: Update docker to 17.12.0-ce ([212904c](https://github.com:red-panda-ci/ubuntu-dind/commit/212904c))
 
 ### Build
 
-* Adds linter and commit validation ([a6feebb951b6ac043336f7e355d5b3477d5dcb69](https://github.com/red-panda-ci/ubuntu-dind/commit/a6feebb951b6ac043336f7e355d5b3477d5dcb69))
-* Adds test ([798e074bfbad36981ddb8cc54a91e03614d77c8a](https://github.com/red-panda-ci/ubuntu-dind/commit/798e074bfbad36981ddb8cc54a91e03614d77c8a))
+* Update CHANGELOG.md to v1.0.1 with Red Panda JPL ([921b0c4](https://github.com:red-panda-ci/ubuntu-dind/commit/921b0c4))
+* Update to jpl v2.6.0 ([842e2d5](https://github.com:red-panda-ci/ubuntu-dind/commit/842e2d5))
+
+### Docs
+
+* Adds CODE_OF_CONDUCT.md ([d3e003c](https://github.com:red-panda-ci/ubuntu-dind/commit/d3e003c))
+
+## v1.0.0 (2018-01-14)
+
+### New
+
+* Release to 1.0.0 ([480737e](https://github.com:red-panda-ci/ubuntu-dind/commit/480737e))
+* Adds renacher-compose, nvm, node ([fcf74fe](https://github.com:red-panda-ci/ubuntu-dind/commit/fcf74fe))
 
 ### Fix
 
-* Fix push.sh script syntax error ([a0b805cfdf160affd09815af7ee9a41c18484f89](https://github.com/red-panda-ci/ubuntu-dind/commit/a0b805cfdf160affd09815af7ee9a41c18484f89))
-
-### New
-
-* Adds renacher-compose, nvm, node ([fcf74fee09716c29b7842dfe9c023b487db6ab14](https://github.com/red-panda-ci/ubuntu-dind/commit/fcf74fee09716c29b7842dfe9c023b487db6ab14))
-* Release to 1.0.0 ([480737e81beef65622afa0e8b0e6bfb8d6824608](https://github.com/red-panda-ci/ubuntu-dind/commit/480737e81beef65622afa0e8b0e6bfb8d6824608))
-
-
-
-<a name="0.1.0"></a>
-# 0.1.0 (2017-12-18)
-
+* Fix: Fix push.sh script syntax error ([a0b805c](https://github.com:red-panda-ci/ubuntu-dind/commit/a0b805c))
 
 ### Build
 
-* Update CHANGELOG.md to v0.1.0 with Red Panda JPL ([3327b5cb3cc32490edd0f6f930b93285cd29261a](https://github.com/red-panda-ci/ubuntu-dind/commit/3327b5cb3cc32490edd0f6f930b93285cd29261a))
+* Adds test ([798e074](https://github.com:red-panda-ci/ubuntu-dind/commit/798e074))
+* Adds linter and commit validation ([a6feebb](https://github.com:red-panda-ci/ubuntu-dind/commit/a6feebb))
+
+## v0.1.0 (2017-12-18)
 
 ### New
 
-* Add jpl CI stuff ([22534fa069f956ecbc330c8cf0e7956f3ca40d71](https://github.com/red-panda-ci/ubuntu-dind/commit/22534fa069f956ecbc330c8cf0e7956f3ca40d71))
+* Add jpl CI stuff ([22534fa](https://github.com:red-panda-ci/ubuntu-dind/commit/22534fa))
 
+### Build
 
+* Update CHANGELOG.md to v0.1.0 with Red Panda JPL ([3327b5c](https://github.com:red-panda-ci/ubuntu-dind/commit/3327b5c))
 
