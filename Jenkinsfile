@@ -37,7 +37,7 @@ pipeline {
         }
         stage ('Make release'){
             // -------------------- automatic release -------------------
-            agent { label 'master' }
+            agent { label 'docker' }
             when { branch 'release/new' }
             steps {
                 publishDockerImages()
@@ -73,7 +73,6 @@ pipeline {
         ansiColor('xterm')
         buildDiscarder(logRotator(artifactNumToKeepStr: '20',artifactDaysToKeepStr: '30'))
         disableConcurrentBuilds()
-        skipDefaultCheckout()
         timeout(time: 1, unit: 'DAYS')
     }
 }
