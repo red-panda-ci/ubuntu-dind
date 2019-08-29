@@ -61,7 +61,7 @@ destroy_container(){
 docker_version_test(){
     local container expected_version
     container=$1
-    expected_version="18.09.6"
+    expected_version="19.03.1"
     version=$(docker exec $container docker -v | cut -d "," -f 1 | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then
@@ -74,21 +74,8 @@ docker_version_test(){
 docker_compose_version_test(){
     local container expected_version
     container=$1
-    expected_version="1.24.0"
+    expected_version="1.24.1"
     version=$(docker exec $container docker-compose -v | cut -d "," -f 1 | cut -d " " -f 3)
-
-    if [[ "$expected_version" = "$version" ]]; then
-        echo 0
-    else   
-        echo 1
-    fi
-}
-
-rancher_compose_version_test(){
-    local container expected_version
-    container=$1
-    expected_version="v0.12.5"
-    version=$(docker exec $container rancher-compose -v | cut -d " " -f 3)
 
     if [[ "$expected_version" = "$version" ]]; then
         echo 0
@@ -120,9 +107,6 @@ main() {
 
         describe "docker-compose version test"
             should $ubuntu_dind $(docker_compose_version_test $ubuntu_dind) "Have docker-compose with the correct version" 
-
-        describe "rancher-compose test"
-            should $ubuntu_dind $(rancher_compose_version_test $ubuntu_dind) "Have rancher-compose with the correct version" 
         
         describe "node test"
             should $ubuntu_dind $(node_version_test $ubuntu_dind) "Have node with the correct version and nvm is intalled correctly"
