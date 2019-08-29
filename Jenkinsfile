@@ -25,7 +25,7 @@ pipeline {
             agent { label 'docker' }
             steps {
                 script {
-                    docker.build('redpandaci/ubuntu-dind:test', '--no-cache .')
+                    docker.build('redpandaci/ubuntu-dind:test', '.')
                 }
             }
         }
