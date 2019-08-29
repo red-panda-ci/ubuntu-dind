@@ -4,7 +4,7 @@ Ubuntu image with docker in docker strategy (is very important run with --privil
 This docker is based on jpetazzo's and billyteves' dind. Credits to them.
 
 _Supported tags and respective `Dockerfile` links:_
-[`1.3.2`, `latest`, `test`](Dockerfile)
+[`1.4.0`, `latest`, `test`](Dockerfile)
 
 ## Usage
 
