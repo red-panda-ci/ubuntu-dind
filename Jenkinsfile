@@ -44,22 +44,6 @@ pipeline {
                 jplMakeRelease(cfg, true)
             }
         }
-        stage ('Release confirm') {
-            // -------------------- manual release -------------------
-            when { branch 'release/v*' }
-            steps {
-                publishDockerImages()
-                jplPromoteBuild(cfg)
-            }
-        }
-        stage ('Release finish') {
-            agent { label 'docker' }
-            when { expression { cfg.BRANCH_NAME.startsWith('release/v') && cfg.promoteBuild.enabled } }
-            steps {
-                publishDockerImages()
-                jplCloseRelease(cfg)
-            }
-        }
     }
 
     post {
